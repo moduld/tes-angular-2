@@ -1,0 +1,45 @@
+
+:host{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.header{
+  position: relative;
+}
+.city{
+  background: #3F51B5;
+  padding: 1em;
+  color: white;
+}
+.nav_menu{
+  background: #313FA0;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D3D1E6;
+}
+.menu_wrapp{
+  display: flex;
+}
+.menu_items{
+
+
+}
+.link{
+  display: block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #D3D1E6;
+  padding: 1em 1.3em;
+
+}
+.active_link{
+  color: white;
+  border-bottom: 2px solid white;
+}
+.arrow{
+  font-size: 0.9em;
+  padding: 1em 1.3em;
+}

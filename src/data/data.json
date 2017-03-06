@@ -1,0 +1,163 @@
+    [
+      {
+        "hotel_id": 1,
+        "name": "Admiral Plaza Hotel",
+        "rating": 3,
+        "rooms": [
+          {
+            "room_id": 1,
+            "type": "Double or Twin Standart",
+            "prise": 9848,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 2,
+            "type": "Double or Twin Standart",
+            "prise": 9848,
+            "breackfast": "Breackfast",
+            "choosen": false
+          }
+        ]
+      },
+      {
+        "hotel_id": 2,
+        "name": "Al Jawahara Gardens",
+        "rating": 4,
+        "rooms": [
+          {
+            "room_id": 1,
+            "type": "Standart Room",
+            "prise": null,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 2,
+            "type": "Standart Room",
+            "prise": 6275,
+            "breackfast": "Breackfast",
+            "choosen": false
+          },
+          {
+            "room_id": 3,
+            "type": "Standart Room",
+            "prise": 4523,
+            "breackfast": "Breackfast-Non Veg",
+            "choosen": false
+          },
+          {
+            "room_id": 4,
+            "type": "Standart Room",
+            "prise": 6275,
+            "breackfast": "Veg Breackfast",
+            "choosen": false
+          },
+          {
+            "room_id": 5,
+            "type": "Executive Room",
+            "prise": 4455,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 6,
+            "type": "Executive Triple",
+            "prise": 5816,
+            "breackfast": "Breackfast",
+            "choosen": false
+          }
+        ]
+      },
+      {
+        "hotel_id": 3,
+        "name": "Al Manar Deluxe Hotel Apartment",
+        "rating": 4,
+        "rooms": [
+          {
+            "room_id": 1,
+            "type": "Studio Room",
+            "prise": 4251,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 2,
+            "type": "Studio Room",
+            "prise": 5102,
+            "breackfast": "Breackfast",
+            "choosen": false
+          },
+          {
+            "room_id": 3,
+            "type": "One Bedroom Apartment",
+            "prise": 4676,
+            "breackfast": "Breackfast-Non Veg",
+            "choosen": false
+          }
+        ]
+      },
+      {
+        "hotel_id": 4,
+        "name": "California Hotel",
+        "rating": 3,
+        "rooms": [
+          {
+            "room_id": 1,
+            "type": "Standart Room",
+            "prise": 3717,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 2,
+            "type": "Standart Room",
+            "prise": 4108,
+            "breackfast": "Breackfast",
+            "choosen": false
+          }
+        ]
+      },
+      {
+        "hotel_id": 5,
+        "name": "Delmon Palace Hotel",
+        "rating": 4,
+        "rooms": [
+          {
+            "room_id": 1,
+            "type": "Standart Room",
+            "prise": null,
+            "breackfast": "",
+            "choosen": false
+          },
+          {
+            "room_id": 2,
+            "type": "Standart Room",
+            "prise": 4285,
+            "breackfast": "Breackfast",
+            "choosen": false
+          },
+          {
+            "room_id": 3,
+            "type": "Standart Room",
+            "prise": 4064,
+            "breackfast": "Breackfast-Non Veg",
+            "choosen": false
+          },
+          {
+            "room_id": 4,
+            "type": "Studio Room",
+            "prise": 4285,
+            "breackfast": "Breackfast",
+            "choosen": false
+          },
+          {
+            "room_id": 5,
+            "type": "Executive Room",
+            "prise": 4064,
+            "breackfast": "Breackfast-Non Veg",
+            "choosen": false
+          }
+        ]
+      }
+    ]

@@ -1,0 +1,34 @@
+<div class="top_block">
+  <div class="search_wrapp">
+    <input type="text" class="search" placeholder="Search hotels" [(ngModel)]="hotel_name">
+    <span class="results" *ngIf="filteredHotelsQuont !== hotels?.length">{{filteredHotelsQuont + '/'}}</span>
+    <span class="results"> {{hotels?.length}}</span>
+    <i class="action icon-search"></i>
+  </div>
+</div>
+<div class="hotels_wrapp" [perfect-scrollbar] >
+  <span class="no_data" *ngIf="!filteredHotelsQuont">Sorry we could not find any items matching
+    your search’ is shown when no items are found in search</span>
+  <div class="hotel_wrapp" *ngFor="let hotel of hotels | findHotels: hotel_name; let i = index" #filterredQuont >
+    <div class="hotel" >
+      <span class="hotel_name" [ngClass]="{choosen: hotel.choosen}">{{hotel.name}}</span>
+      <div class="rating_wrapp">
+        <i class="rating icon-star" *ngFor="let rate of commonRating; let s = index" [ngClass]="{filled: s < hotel.rating}"></i>
+      </div>
+    </div>
+    <div class="rooms" *ngFor="let room of hotel.rooms | roomQuont: 3 : hotel?.toggled; let j = index"
+         [attr.hotel_id]="hotel.hotel_id" [attr.room_id]="room.room_id" [ngClass]="{choosedRoom: room.choosen}">
+      <span class="room_wrapp">
+        <span class="room">{{room.type}}</span>
+        <span class="prise">{{room.prise | number}}</span>
+      </span>
+      <span class="breackfast">{{room.breackfast}}</span>
+    </div>
+    <div class="toggler_wrapp" *ngIf="hotel.rooms?.length > 3">
+      <input type="checkbox" id="less_toggler_{{i}}" class="togglers" [(ngModel)]="hotel.toggled">
+      <label class="label label_more" for="less_toggler_{{i}}">show more</label>
+      <label class="label label_less" for="less_toggler_{{i}}">show less</label>
+    </div>
+  </div>
+</div>
+

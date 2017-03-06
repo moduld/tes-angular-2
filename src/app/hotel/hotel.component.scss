@@ -1,0 +1,130 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.top_block{
+  background: white;
+  padding: 1em;
+}
+.search_wrapp{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9A9A9A;
+}
+.no_data{
+  background: white;
+  padding: 1em;
+  margin-top: 0.5em;
+  display: block;
+}
+.search{
+  background: white;
+  padding: 1em 0;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+.results{
+  color: #9A9A9A;
+  &:last-of-type{
+    margin-right: 1.5em;
+  }
+}
+.action{
+  color: #9A9A9A;
+}
+.hotels_wrapp{
+  overflow-y: auto;
+  height: 0;
+  flex: 1 0 auto;
+  padding-right: 2.5em;
+  margin: 1em  2em 0 0;
+}
+.hotel_wrapp{
+  display: flex;
+  flex-direction: column;
+}
+.hotel_name{
+  display: flex;
+  align-items: center;
+}
+.hotel{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em 0;
+  margin-top: 0.8em;
+}
+.choosen{
+  &:before{
+    content: '';
+    border-radius: 50%;
+    height: 0.5em;
+    width: 0.5em;
+    background: #3FC6FD;
+    margin-right: 0.5em;
+    display: block;
+  }
+}
+.rating{
+  color: #9A9A9A;
+  margin: 0 0.1em;
+}
+.filled{
+  color: #FFCE57;
+}
+.rooms{
+  background: white;
+  border: 1px solid #9A9A9A;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  &:hover{
+    background: #F8F9FD;
+  }
+  &:first-child{
+    margin-top: 0;
+  }
+}
+.choosedRoom{
+  background: #F8F9FD;
+}
+.room_wrapp{
+  display: flex;
+  justify-content: space-between;
+}
+.prise{
+  color: #FEA628;
+}
+.breackfast{
+  color: #9A9A9A;
+  font-size: 0.8em;
+  margin-top: 0.3em;
+}
+.label{
+  display: none;
+  color: #29ADF5;
+  padding: 0.3em 0;
+  cursor: pointer;
+}
+.toggler_wrapp{
+  display: flex;
+  justify-content: flex-end;
+}
+.togglers{
+  display: none;
+  &:checked ~ .label_less{
+    display: block;
+  }
+  &:not(:checked) ~ .label_more{
+    display: block;
+  }
+}
+
+@media all and (-ms-high-contrast:none){
+  .hotels_wrapp{
+    height: calc(100vh - 230px);
+  }
+}

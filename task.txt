@@ -1,0 +1,6 @@
+Create an Angular 2 component for the following design.
+This is a listing of hotels with rooms (the data to display is static and pulled from a json file)
+The search box allows searching the list based on hotel name and shows the count of results returned. An error message ‘Sorry we could not find any items matching your search’ is shown when no items are found in search.
+On clicking a room its state changes to selected and a blue dot is shown before the hotel name.
+Lastly there is an option to show more\show less rooms based on the link below rooms listing.
+The final output should match the design provided below.

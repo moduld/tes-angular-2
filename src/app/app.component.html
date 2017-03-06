@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<header class="header">
+    <h3 class="city">Dubai</h3>
+    <nav class="nav_menu">
+        <ul class="menu_wrapp">
+            <li class="menu_items"><a routerLink="package" routerLinkActive="active_link" class="link">package</a></li>
+            <li class="menu_items"><a routerLink="hotels" routerLinkActive="active_link" class="link">hotel</a></li>
+            <li class="menu_items"><a routerLink="activity" routerLinkActive="active_link" class="link">activity</a></li>
+        </ul>
+        <span class="arrow icon-right"></span>
+    </nav>
+</header>
+<router-outlet></router-outlet>
